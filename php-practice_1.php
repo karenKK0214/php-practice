@@ -1,6 +1,6 @@
 <?php
 // Q1 変数と文字列
-$first = "私の名前は「";
+$first = "私の名前は「"; //
 $name = "樋坂";
 $last = "」です。";
 echo $first . $name . $last;
@@ -16,15 +16,11 @@ echo "現在時刻は、" . $now . "です。";
 
 // Q4 条件分岐-1 if文
 $device = "mac"; 
-if ($device === "windows") {
-    echo "使用OSは、windowsです。";
+if ($device === "windows" || $device === "mac") {
+    echo "使用OSは、{$device}です。";
 } else {
-    if ($device === "mac") {
-        echo "使用OSは、macです。";
-    } else {
-        echo "どちらでもありません。";
-    }
-};
+    echo "どちらでもありません。";
+}
 
 // Q5 条件分岐-2 三項演算子
 $age = 20;
