@@ -52,6 +52,7 @@ var_dump($personalInfos);
 
 
 // Q3 オブジェクト-1
+// Q4 オブジェクト-2
 class Student
 {
     public $studentId;
@@ -62,24 +63,12 @@ class Student
         $this->studentId = $id;
         $this->studentName = $name;
     }
-
-    public function attend()
-    {
-        echo '授業に出席しました。';
-    }
-}
-
-$student = new Student(120, '山田');
-
-echo '学籍番号' . $student->studentId . '番の生徒は' . $student->studentName . 'です。';
-
-// Q4 オブジェクト-2
+    
     public function attend($subject)
     {
         echo $this->studentName . 'は' . $subject . 'の授業に参加しました。学籍番号：' . $this->studentId;
     }
-
-
+}
 $yamada = new Student(120, '山田');
 $yamada->attend('PHP');
 
